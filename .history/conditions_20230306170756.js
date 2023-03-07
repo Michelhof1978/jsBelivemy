@@ -121,7 +121,7 @@ while (i < 5) {
   }
 
   //Gérer les exeptions:
-//A UTILISER UNIQUEMENT POUR AFFICHER UNE ERREUR AUX UTILISTEURS.
+A UTILISER UNIQUEMENT POUR AFFICHER UNE ERREUR AUX UTILISTEURS.
 try {
   // try va s’exécuter et voir  s’il y a  erreur et si erreur le bloc catch va s’exécuter automatiquement
   let recompense = prompt("Choisissez une récompense : épée, arc, haches");
