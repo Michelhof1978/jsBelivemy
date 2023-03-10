@@ -226,7 +226,7 @@ let monTableauAssociatif = {
 function concatener(tableau) {
     let chaine = '';
 
-    for (const valeur in tableau) {//Toutes les valeurs (prénom, nom, poste) sont passées ds mon tableau
+    for (const valeur in tableau) {
         
         chaine += (valeur + ' : ' + tableau[valeur] + '\n');
 
@@ -244,7 +244,7 @@ concatener(monTableauAssociatif);
 
 let fruits = ['pomme', 'banane', 'poire', 'fraise']
 
-//Ainsi, voici les principales fonctionnalités :
+Ainsi, voici les principales fonctionnalités :
 
 fruits.length : retourne le nombre d'éléments dans le tableau (ici retourne 4)
 

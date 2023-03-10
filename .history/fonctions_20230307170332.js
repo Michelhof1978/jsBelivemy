@@ -90,11 +90,14 @@ function direBonjour() {
   // Nous verrons plus tard que ces fonctions fléchées n'ont pas de this
   -------------------------------------------------------------------------------------
   //Les closures
-
   // Les closures (ou fermetures) en JavaScript sont un concept important et puissant de la programmation. Elles permettent de créer des fonctions avec des variables qui persistent dans le temps même après que la fonction ait été appelée.
+
   // En d'autres termes, une closure est une fonction qui "capture" les variables de son environnement parent, même si cette fonction est appelée en dehors de son contexte initial. Cela signifie que les variables définies dans la portée parente de la closure sont accessibles à la fonction interne de la closure, même après que la fonction parente ait été exécutée.
+  
   // Voici un exemple simple de closure en JavaScript:
-    function multiplier(x) {
+  
+ 
+  function multiplier(x) {
     return function(y) {
       return x * y;
     };
@@ -150,4 +153,4 @@ function direBonjour() {
     console.log(monDeuxiemeTimer());
     
     console.log(monTimer());
-  
+  }

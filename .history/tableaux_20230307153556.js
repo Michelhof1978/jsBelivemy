@@ -132,7 +132,7 @@ let monTableauAssociatif = {
 };
 // console.log(monTableauAssociatif);
 --------------------------------------------------
-//Boucle FOR---IN = Renvoi ds sa variable l index de lélément du mon tableau
+//Boucle FOR---IN = Renvoi ds sa variable l l index
 // La boucle "for...in" en JavaScript permet de parcourir les propriétés d'un objet. La syntaxe de la boucle "for...in" est la suivante :
 
 
@@ -170,7 +170,7 @@ for (const fruit in panier) {
     console.log(panier[fruit]);
 }
 --------------------------------------------------------------------------------------------
-//BOUCLE FOR---OF = Renvoi ds la varible la valeur de l élément LE PLUS UTILISE QUE FOR IN
+//BOUCLE FOR---OF = Renvoi la valeur
 // La boucle "for of" est une fonctionnalité de JavaScript introduite dans la version ES6 (ECMAScript 2015) qui permet d'itérer sur les éléments d'une collection de données, tels qu'un tableau ou une chaîne de caractères.
 
 // Elle utilise une syntaxe simplifiée par rapport à la boucle "for" traditionnelle et permet d'accéder à chaque élément de la collection en utilisant une variable déclarée à l'intérieur de la boucle.
@@ -203,73 +203,3 @@ for (const fruit of panier) {
   console.log(panier.indexOf(fruit));
 }
 --------------------------------------------------------------------------------------------------------
-//Boucle Foreach = est une fonction anononyme et  va permettre d utiliser les fonctions anonymes
-let listeDePays = ['France', 'Belgique', 'Japon', 'Maroc'];
-
-// for (const pays of listeDePays) {
-//     console.log(pays);
-// }
-
-// listeDePays.forEach(function(pays){
-//     console.log(pays);
-// });
-
-listeDePays.forEach(pays => console.log(pays));//Fonction fléclée
---------------------------------------------------------------------------------------------------------
-//Concaténer un tableau associatif = il faut utiliser une boucle FOR OF ou FOR IN
-let monTableauAssociatif = {
-    'prenom'    : 'Mark',
-    'nom'       : 'Zuckerberg',
-    'poste'     : 'PDG de Facebook'
-};
-
-function concatener(tableau) {
-    let chaine = '';
-
-    for (const valeur in tableau) {//Toutes les valeurs (prénom, nom, poste) sont passées ds mon tableau
-        
-        chaine += (valeur + ' : ' + tableau[valeur] + '\n');
-
-    }
-
-    console.log(chaine);
-}
-
-concatener(monTableauAssociatif);
---------------------------------------------------------------------------------------------------------
-
-// Voici un résumé des principales fonctionnalités liées aux tableaux, que nous avons vu jusqu'à présent.
-
-// Pour ces exemples, nous prendrons en compte le fait que nous avons ce tableau :
-
-let fruits = ['pomme', 'banane', 'poire', 'fraise']
-
-//Ainsi, voici les principales fonctionnalités :
-
-fruits.length : retourne le nombre d'éléments dans le tableau (ici retourne 4)
-
-fruits[0] : sélectionne le premier élément
-
-fruits[length - 1] : sélectionne le dernier élément
-
-fruits.push('pamplemousse') : ajoute un élément à la fin du tableau
-
-fruits.unshift('pamplemousse') : ajoute un élément au début du tableau
-
-fruits.pop() : supprime le dernier élément
-
-fruits.shift() : supprime le premier élément
-
-fruits.indexOf('banane') : retourne l'index d'un élément
-
-fruits.join() : concatène les éléments dans une chaîne de caractères avec virgules, mais il est possible de spécifier un autre séparateur dans les paranthèses
-
-fruits.slice() : crée une copie du tableau (à associer à une autre variable donc)
-
-fruits.splice([début], [nbASupprimer], [élément(s)]) : retire, remplace ou ajoute des éléments.
-
-Début : l'index à partir duquel commencer le changement, si négatif, part de la fin du tableau
-
-nbASupprimer : un entier indiquant le nombre d'éléments à retirer ou remplacer
-
-Element(s) : les éléments à ajouter à partir du début précisé. Si aucun élément n'est spécifié, alors n'en ajoutera pas.

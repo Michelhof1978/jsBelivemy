@@ -226,7 +226,7 @@ let monTableauAssociatif = {
 function concatener(tableau) {
     let chaine = '';
 
-    for (const valeur in tableau) {//Toutes les valeurs (prénom, nom, poste) sont passées ds mon tableau
+    for (const valeur in tableau) {
         
         chaine += (valeur + ' : ' + tableau[valeur] + '\n');
 
