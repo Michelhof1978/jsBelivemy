@@ -253,7 +253,7 @@ monObjet.has(objet1);
 // Retourner un élément
 monObjet.get(objet1);
 ------------------------------------------------------------------------------------------------------------
-//SPREAD OPERATORS --------------------------------
+SPREAD OPERATOR
 // L'opérateur de propagation (ou spread operator en anglais) est un opérateur en JavaScript qui permet de déployer ou d'étaler les éléments d'un tableau ou d'un objet dans un autre tableau ou objet.
 // En utilisant l'opérateur de propagation, on peut ajouter rapidement et facilement les éléments d'un tableau à un autre tableau, ou fusionner les propriétés d'un objet dans un autre objet. Voici un exemple d'utilisation de l'opérateur de propagation pour ajouter les éléments d'un tableau à un autre :
 const tableau1 = [1, 2, 3];
@@ -274,84 +274,3 @@ console.log(objet3); // { x: 1, y: 2, z: 3 }
 
 // Dans cet exemple, l'opérateur de propagation est utilisé pour fusionner les propriétés de `objet1` et `objet2` dans un nouvel objet `objet3`.
 // En résumé, l'opérateur de propagation est un outil pratique en JavaScript pour étaler les éléments d'un tableau ou les propriétés d'un objet dans un autre tableau ou objet.
---------------------------------------------------------------------------------------------------------------
-// L'objet Window a pour fonction d'englober l'ensemble des fonctions, et autres objets de JavaScript. C'est de lui que tout part.
-// Voici une petite démonstration de quelques fonctions bien utiles que propose cet objet. Essayez ces options dans l'ordre ;)
-// Ouvrir une fenêtre
-
-// Essayer (window.open)
-window.open('https://believemy.com');
-Redimensionner une fenêtre
-
-(window.resizeTo)
-let fenetre = window.open('https://believemy.com', '', 'width=900, height=700');
-
-function resize() {
-fenetre.resizeTo(700, 470);
-}
-
-// Fermer une fenêtre
-(window.close)
-
-let fenetre = window.open('https://believemy.com', '', 'width=900, height=700');
-
-function resize() {
-fenetre.close();
-}
------------------------------------------------------------------------------------------------------------
-L'objet Navigator a pour fonction de fournir tout un tas d'informations sur le navigateur de nos utilisateurs. Pour certaines de ces informations, vous devrez demander une permission grâce à une boîte de dialogue.
-
-Voici une petite démonstration de quelques fonctions bien utiles que propose cet objet.
-
-Les informations principales
-
-Les cookies sont-ils autorisés ? true
-Système d'exploitation ? Win32
-Langue du navigateur ? fr-FR
-
-
-navigator.cookieEnabled
-navigator.platform
-navigator.language
------------------------------------------------------------------------------------------------------------
-L'objet History a pour fonction de manipuler l'historique de nos utilisateurs.
-
-Voici une petite démonstration de quelques fonctions bien utiles que propose cet objet.
-
-Page précédente
-Essayer (History.back)
-
-history.back()
-Page suivante (si existante)
-
-Essayer (History.forward)
-history.forward();
---------------------------------------------------------------
-L'objet Location a pour fonction de nous donner des informations relatives aux adresses, pour, par exemple, rediriger l'utilisateur.
-
-Voici une petite démonstration de quelques fonctions bien utiles que propose cet objet.
-
-Recharger une page (bloqué par CodePen)
-
-Essayer (Location.reload)
-location .reload();
-
-Rediriger
-Essayer (Location.href)
-
-location.href();
---------------------------------------------------------------------------------------------------------
-L'objet Screen a pour fonction de nous donner des informations relatives aux écrans.
-
-Voici une petite démonstration de quelques fonctions bien utiles que propose cet objet.
-
-Les informations principales
-
-Largeur de l'écran : 1536px
-Hauteur de l'écran : 816px
-Résolution : 24
-
-screen.availWidth;
-screen.availHeight;
-screen.pixelDepth;
---------------------------------------------------------------------------------------------------------

@@ -283,75 +283,18 @@ console.log(objet3); // { x: 1, y: 2, z: 3 }
 window.open('https://believemy.com');
 Redimensionner une fenêtre
 
-(window.resizeTo)
+Essayer (window.resizeTo)
 let fenetre = window.open('https://believemy.com', '', 'width=900, height=700');
 
 function resize() {
 fenetre.resizeTo(700, 470);
 }
-
 // Fermer une fenêtre
-(window.close)
+Essayer (window.close)
 
 let fenetre = window.open('https://believemy.com', '', 'width=900, height=700');
 
 function resize() {
 fenetre.close();
 }
------------------------------------------------------------------------------------------------------------
-L'objet Navigator a pour fonction de fournir tout un tas d'informations sur le navigateur de nos utilisateurs. Pour certaines de ces informations, vous devrez demander une permission grâce à une boîte de dialogue.
-
-Voici une petite démonstration de quelques fonctions bien utiles que propose cet objet.
-
-Les informations principales
-
-Les cookies sont-ils autorisés ? true
-Système d'exploitation ? Win32
-Langue du navigateur ? fr-FR
-
-
-navigator.cookieEnabled
-navigator.platform
-navigator.language
------------------------------------------------------------------------------------------------------------
-L'objet History a pour fonction de manipuler l'historique de nos utilisateurs.
-
-Voici une petite démonstration de quelques fonctions bien utiles que propose cet objet.
-
-Page précédente
-Essayer (History.back)
-
-history.back()
-Page suivante (si existante)
-
-Essayer (History.forward)
-history.forward();
---------------------------------------------------------------
-L'objet Location a pour fonction de nous donner des informations relatives aux adresses, pour, par exemple, rediriger l'utilisateur.
-
-Voici une petite démonstration de quelques fonctions bien utiles que propose cet objet.
-
-Recharger une page (bloqué par CodePen)
-
-Essayer (Location.reload)
-location .reload();
-
-Rediriger
-Essayer (Location.href)
-
-location.href();
---------------------------------------------------------------------------------------------------------
-L'objet Screen a pour fonction de nous donner des informations relatives aux écrans.
-
-Voici une petite démonstration de quelques fonctions bien utiles que propose cet objet.
-
-Les informations principales
-
-Largeur de l'écran : 1536px
-Hauteur de l'écran : 816px
-Résolution : 24
-
-screen.availWidth;
-screen.availHeight;
-screen.pixelDepth;
---------------------------------------------------------------------------------------------------------
+Vous souhaitez plus d'exemples ? Allez sur ce lien !

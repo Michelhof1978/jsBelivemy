@@ -151,8 +151,9 @@ function direBonjour() {
     
     console.log(monTimer());
     -------------------------------------------------------------------------------------------
-    //REST parameters (...nombres) --------------------------------
-      function addition(...nombres) {
+    //REST parameter
+    
+    function addition(...nombres) {
 
       let resultat = 0;
   
@@ -164,35 +165,5 @@ function direBonjour() {
   
   }
   
-  addition(4, 9, 5, 415, 78, 54, 5);//Additionne toutes les valeurs
- 
-//   Le paramètre rest en JavaScript est une fonctionnalité qui permet à une fonction d'accepter un nombre variable d'arguments en tant qu'array.
-
-// Le paramètre rest est défini en utilisant trois points (...) suivis du nom du paramètre. Par exemple :
-
-function maFonction(...args) {
-  console.log(args);
-}
-
-// Dans cet exemple, la fonction `maFonction` accepte un nombre variable d'arguments, qui sont tous stockés dans l'array `args`. La fonction peut ensuite accéder à ces arguments en utilisant l'array `args`.
-
-// Voici un autre exemple :
-function somme(...nombres) {
-  let resultat = 0;
-  for (let nombre of nombres) {
-    resultat += nombre;
-  }
-  return resultat;
-}
-
-console.log(somme(1, 2, 3, 4)); // affiche 10
-console.log(somme(1, 2)); // affiche 3
-console.log(somme(1)); // affiche 1
-console.log(somme()); // affiche 0
-
-// Dans cet exemple, la fonction `somme` accepte un nombre variable d'arguments et utilise une boucle for pour ajouter chaque argument à une variable `resultat`, qui est ensuite renvoyée.
-
-// Le paramètre rest est une fonctionnalité utile qui permet aux développeurs de créer des fonctions plus flexibles et génériques qui peuvent accepter un nombre variable d'arguments.
-//   ------------------------------------------------------------------------------------------
-
+  addition(4, 9, 5, 415, 78, 54, 5);
   

@@ -151,7 +151,7 @@ function direBonjour() {
     
     console.log(monTimer());
     -------------------------------------------------------------------------------------------
-    //REST parameters (...nombres) --------------------------------
+    //REST parameters --------------------------------
       function addition(...nombres) {
 
       let resultat = 0;
@@ -190,9 +190,9 @@ console.log(somme(1, 2)); // affiche 3
 console.log(somme(1)); // affiche 1
 console.log(somme()); // affiche 0
 
-// Dans cet exemple, la fonction `somme` accepte un nombre variable d'arguments et utilise une boucle for pour ajouter chaque argument à une variable `resultat`, qui est ensuite renvoyée.
+Dans cet exemple, la fonction `somme` accepte un nombre variable d'arguments et utilise une boucle for pour ajouter chaque argument à une variable `resultat`, qui est ensuite renvoyée.
 
-// Le paramètre rest est une fonctionnalité utile qui permet aux développeurs de créer des fonctions plus flexibles et génériques qui peuvent accepter un nombre variable d'arguments.
-//   ------------------------------------------------------------------------------------------
+Le paramètre rest est une fonctionnalité utile qui permet aux développeurs de créer des fonctions plus flexibles et génériques qui peuvent accepter un nombre variable d'arguments.
+  ------------------------------------------------------------------------------------------
 
   

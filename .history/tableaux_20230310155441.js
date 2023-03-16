@@ -300,25 +300,32 @@ let [premiereDevise, ...autres] = devises;
 console.log(premiereDevise);
 console.log(autres);
 --------------------------------------------------------------------------------------------------------
-//SPREAD OPERATORS --------------------------------
-// L'opérateur de propagation (ou spread operator en anglais) est un opérateur en JavaScript qui permet de déployer ou d'étaler les éléments d'un tableau ou d'un objet dans un autre tableau ou objet.
-// En utilisant l'opérateur de propagation, on peut ajouter rapidement et facilement les éléments d'un tableau à un autre tableau, ou fusionner les propriétés d'un objet dans un autre objet. Voici un exemple d'utilisation de l'opérateur de propagation pour ajouter les éléments d'un tableau à un autre :
+L'opérateur de propagation (ou spread operator en anglais) est un opérateur en JavaScript qui permet de déployer ou d'étaler les éléments d'un tableau ou d'un objet dans un autre tableau ou objet.
+
+En utilisant l'opérateur de propagation, on peut ajouter rapidement et facilement les éléments d'un tableau à un autre tableau, ou fusionner les propriétés d'un objet dans un autre objet. Voici un exemple d'utilisation de l'opérateur de propagation pour ajouter les éléments d'un tableau à un autre :
+
+```
 const tableau1 = [1, 2, 3];
 const tableau2 = [4, 5, 6];
 
 const tableau3 = [...tableau1, ...tableau2];
 
 console.log(tableau3); // [1, 2, 3, 4, 5, 6]
+```
 
-// Dans cet exemple, l'opérateur de propagation est utilisé pour étaler les éléments de `tableau1` et `tableau2` dans un nouveau tableau `tableau3`.
-// On peut également utiliser l'opérateur de propagation pour fusionner les propriétés d'un objet dans un autre objet :
+Dans cet exemple, l'opérateur de propagation est utilisé pour étaler les éléments de `tableau1` et `tableau2` dans un nouveau tableau `tableau3`.
+
+On peut également utiliser l'opérateur de propagation pour fusionner les propriétés d'un objet dans un autre objet :
+
+```
 const objet1 = { x: 1, y: 2 };
 const objet2 = { z: 3 };
 
 const objet3 = { ...objet1, ...objet2 };
 
 console.log(objet3); // { x: 1, y: 2, z: 3 }
+```
 
-// Dans cet exemple, l'opérateur de propagation est utilisé pour fusionner les propriétés de `objet1` et `objet2` dans un nouvel objet `objet3`.
-// En résumé, l'opérateur de propagation est un outil pratique en JavaScript pour étaler les éléments d'un tableau ou les propriétés d'un objet dans un autre tableau ou objet.
---------------------------------------------------------------------------------------------------------------------
+Dans cet exemple, l'opérateur de propagation est utilisé pour fusionner les propriétés de `objet1` et `objet2` dans un nouvel objet `objet3`.
+
+En résumé, l'opérateur de propagation est un outil pratique en JavaScript pour étaler les éléments d'un tableau ou les propriétés d'un objet dans un autre tableau ou objet.

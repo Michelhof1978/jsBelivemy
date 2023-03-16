@@ -334,24 +334,11 @@ Voici une petite démonstration de quelques fonctions bien utiles que propose ce
 Recharger une page (bloqué par CodePen)
 
 Essayer (Location.reload)
+Voir le code
 location .reload();
-
 Rediriger
+
 Essayer (Location.href)
 
 location.href();
---------------------------------------------------------------------------------------------------------
-L'objet Screen a pour fonction de nous donner des informations relatives aux écrans.
-
-Voici une petite démonstration de quelques fonctions bien utiles que propose cet objet.
-
-Les informations principales
-
-Largeur de l'écran : 1536px
-Hauteur de l'écran : 816px
-Résolution : 24
-
-screen.availWidth;
-screen.availHeight;
-screen.pixelDepth;
 --------------------------------------------------------------------------------------------------------

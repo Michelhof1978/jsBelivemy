@@ -354,4 +354,3 @@ Résolution : 24
 screen.availWidth;
 screen.availHeight;
 screen.pixelDepth;
---------------------------------------------------------------------------------------------------------

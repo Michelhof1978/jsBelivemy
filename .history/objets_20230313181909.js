@@ -351,7 +351,7 @@ Largeur de l'écran : 1536px
 Hauteur de l'écran : 816px
 Résolution : 24
 
+Voir le code
 screen.availWidth;
 screen.availHeight;
 screen.pixelDepth;
---------------------------------------------------------------------------------------------------------

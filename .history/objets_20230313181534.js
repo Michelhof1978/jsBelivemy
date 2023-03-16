@@ -325,33 +325,6 @@ history.back()
 Page suivante (si existante)
 
 Essayer (History.forward)
+
 history.forward();
 --------------------------------------------------------------
-L'objet Location a pour fonction de nous donner des informations relatives aux adresses, pour, par exemple, rediriger l'utilisateur.
-
-Voici une petite démonstration de quelques fonctions bien utiles que propose cet objet.
-
-Recharger une page (bloqué par CodePen)
-
-Essayer (Location.reload)
-location .reload();
-
-Rediriger
-Essayer (Location.href)
-
-location.href();
---------------------------------------------------------------------------------------------------------
-L'objet Screen a pour fonction de nous donner des informations relatives aux écrans.
-
-Voici une petite démonstration de quelques fonctions bien utiles que propose cet objet.
-
-Les informations principales
-
-Largeur de l'écran : 1536px
-Hauteur de l'écran : 816px
-Résolution : 24
-
-screen.availWidth;
-screen.availHeight;
-screen.pixelDepth;
---------------------------------------------------------------------------------------------------------

@@ -151,7 +151,7 @@ function direBonjour() {
     
     console.log(monTimer());
     -------------------------------------------------------------------------------------------
-    //REST parameters (...nombres) --------------------------------
+    //REST parameters (...nombres)--------------------------------
       function addition(...nombres) {
 
       let resultat = 0;
