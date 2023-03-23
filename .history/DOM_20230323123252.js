@@ -239,6 +239,8 @@ clearInterval(interval);// Arrêter
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 Voici une fiche technique résumant l'ensemble des évènements principaux.
 
+
+
 Les écouteurs "on" et les propriétés JavaScript
 onfocus - Quand l'utilisateur sélectionne l'élément
 
@@ -249,6 +251,7 @@ onclick - Quand l'utilisateur clique sur l'élément
 ondblclick - Quand l'utilisateur double-clique sur l'élément
 
 onkeypress - Quand l'utilisateur appuie sur une touche du clavier dans l'élément
+
 
 
 Les évènements avec addEventListener
@@ -264,4 +267,3 @@ cut - Quand l'utilisateur coupe un élément
 
 paste - Quand l'utilisateur colle un élément
 
---------------------------------------------------------------------------------------------------------------------

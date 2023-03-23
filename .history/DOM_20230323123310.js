@@ -251,6 +251,7 @@ ondblclick - Quand l'utilisateur double-clique sur l'élément
 onkeypress - Quand l'utilisateur appuie sur une touche du clavier dans l'élément
 
 
+
 Les évènements avec addEventListener
 click - Quand l'utilisateur clique sur l'élément
 
