@@ -597,55 +597,6 @@ Setter :
 set nom(nouveauNom) {
   this._nom = nouveauNom; // assigne la nouvelle valeur à la propriété '_nom'
 }
----------------------------------
-//Les getters et setters en JavaScript permettent d'accéder et de modifier les propriétés d'un objet de manière contrôlée.
-class Personne {
-    constructor(nom, age) {
-      this._nom = nom;
-      this._age = age;
-    }
-  
-    // Getter pour la propriété nom
-    get nom() {
-      return this._nom;
-    }
-  
-    // Setter pour la propriété nom
-    set nom(nouveauNom) {
-      this._nom = nouveauNom;
-    }
-  
-    // Getter pour la propriété age
-    get age() {
-      return this._age;
-    }
-  
-    // Setter pour la propriété age
-    set age(nouvelAge) {
-      if (nouvelAge > 0 && nouvelAge < 120) {
-        this._age = nouvelAge;
-      } else {
-        console.log("Âge invalide");
-      }
-    }
-  }
-  
-  // Exemple d'utilisation
-  const personne1 = new Personne("Alice", 25);
-  console.log(personne1.nom); // "Alice"
-  personne1.nom = "Bob";
-  console.log(personne1.nom); // "Bob"
-  
-  console.log(personne1.age); // 25
-  personne1.age = 130; // "Âge invalide"
-  console.log(personne1.age); // 25
-  //Dans cet exemple, la classe Personne a deux propriétés : _nom et _age. Les getters et setters pour ces propriétés permettent de contrôler leur accès et leur modification.
-
-
-Les getters et setters sont définis en utilisant les mots-clés get et set, suivis du nom de la propriété avec une majuscule pour le getter et le setter. Dans l'exemple ci-dessus, le getter pour la propriété nom est défini comme get nom(), et le setter est défini comme set nom(nouveauNom).
-
-
-L'utilisation de getters et setters est facultative en JavaScript. Si vous n'avez pas besoin de contrôler l'accès ou la modification des propriétés d'un objet, vous pouvez simplement y accéder et les modifier directement.
                                 -----------------------
 //Dans ces exemples, la propriété nom est encapsulée en utilisant une propriété privée _nom, et les méthodes get et set permettent d'accéder à cette propriété de manière contrôlée. Notez que le nom de la propriété privée commence par un underscore _ pour indiquer qu'elle ne doit pas être accédée directement en dehors de l'objet.
     class Utilisateur {
