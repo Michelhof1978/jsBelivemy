@@ -583,21 +583,29 @@ maValeurAvecBind();
     console.log(perroquet);
     --------------------------------------------------------------------------------------------------------
     //Les getter et les setter
-    //Les getters et setters en JavaScript permettent d'encapsuler les propriétés d'un objet, c'est-à-dire de les rendre privées et de contrôler l'accès à celles-ci en fournissant des méthodes pour les obtenir (getter) et les modifier (setter). Voici comment les définir en français :
+    Les getters et setters en JavaScript permettent d'encapsuler les propriétés d'un objet, c'est-à-dire de les rendre privées et de contrôler l'accès à celles-ci en fournissant des méthodes pour les obtenir (getter) et les modifier (setter). Voici comment les définir en français :
 
 
 Getter :
+
+
+javascript
+Copy code
 // Définition d'un getter pour une propriété 'nom'
 get nom() {
   return this._nom; // retourne la valeur de la propriété '_nom'
 }
 
 Setter :
+
+
+javascript
+Copy code
 // Définition d'un setter pour une propriété 'nom'
 set nom(nouveauNom) {
   this._nom = nouveauNom; // assigne la nouvelle valeur à la propriété '_nom'
 }
-                                -----------------------
+
 Dans ces exemples, la propriété nom est encapsulée en utilisant une propriété privée _nom, et les méthodes get et set permettent d'accéder à cette propriété de manière contrôlée. Notez que le nom de la propriété privée commence par un underscore _ pour indiquer qu'elle ne doit pas être accédée directement en dehors de l'objet.
     class Utilisateur {
         constructor(prenom, nom, email) {

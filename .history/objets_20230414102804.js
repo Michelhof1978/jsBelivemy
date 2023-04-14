@@ -597,7 +597,7 @@ Setter :
 set nom(nouveauNom) {
   this._nom = nouveauNom; // assigne la nouvelle valeur à la propriété '_nom'
 }
-                                -----------------------
+
 Dans ces exemples, la propriété nom est encapsulée en utilisant une propriété privée _nom, et les méthodes get et set permettent d'accéder à cette propriété de manière contrôlée. Notez que le nom de la propriété privée commence par un underscore _ pour indiquer qu'elle ne doit pas être accédée directement en dehors de l'objet.
     class Utilisateur {
         constructor(prenom, nom, email) {
