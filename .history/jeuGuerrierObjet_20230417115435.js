@@ -11,7 +11,7 @@ class Personnage {
       return this.pseudo + " (" + this.classe + ") a " + this.sante + " points de vie et est au niveau " + this.niveau + ".";
     }
     
-    evoluer() {//Pas obligé de faire function evoluer() mais juste evoluer() car nous sommes ds une class
+    evoluer() {
       this.niveau++;
       console.log(this.pseudo + ' passe au niveau ' + this.niveau + ' !');
     }

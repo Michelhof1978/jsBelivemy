@@ -11,7 +11,7 @@ let requete = new XMLHttpRequest();
 requete.open("POST", url); //Envoyer des données à l'Api sans recharger la page
 requete.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"); //Comme nous sommes en POST, nous devons nous faire passer par un formulaire
 requete.responseType = "json";
-requete.send("prenom=John"); //Envoyer la requête, si on doit renvoyer plusieurs informations comme prénom + nom, on doit faire avec & et sans espaces entre les infos:prenom=John&nom=tartenpion
+requete.send("prenom=John"); //Envoyer la requête, si on doit renvoyer plusieurs informations comme prénom + nom, on doit faire avec & et sans espaces entre les infos:prenom=John&nom=
 
 requete.onload = function () {
   if (requete.readyState === XMLHttpRequest.DONE) {
