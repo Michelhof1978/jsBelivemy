@@ -1,4 +1,4 @@
-  //A EVITER D UTILISER CODE CI DESSOUS? UTILISER PLUTOT FETCH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  //A
   
   const url = 'https://blockchain.info/ticker';
 

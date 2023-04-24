@@ -1,5 +1,5 @@
 //LE PLUS UTILISE POUR LES REQUETES ASYNCHROMES
-//SI ON UTILISE ASYNC, On est OBLIGE D UTILISER PAR LA SUITE AWAIT
+//SI ON UTILISE ASYNC
 
 // Async et Await sont ce qu'on appelle des "sucres syntaxiques" : ils n'apportent pas de nouvelles fonctionnalités, mais permettent d'utiliser les promesses de façon plus intuitives.
 
