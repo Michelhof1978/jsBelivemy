@@ -724,21 +724,3 @@ class Personne {
       // // perroquet.presentation();
       // // perroquet.voler();
       // console.log(perroquet);
-      --------------------------------------------------------------------------------------
-      //LES CLASSES ET LES CONSTRUCTEURS
-      class Utilisateur {
-        constructor (prenom, nom){
-          this.prenom = prenom;
-          this.nom = nom;
-        }
-          sePresenter(){
-            console.log (`je m'appelle ${this.prenom} ${this.nom}.`);// Bien mettre ici des backticks (accent grave) pour la chaine de caractère à cause de m'appelle qui a une apostrophe
-          }
-        
-      }
-
-      let elon = new Utilisateur('elon', 'musk');//On crée un nouvel objet grâce à la class utilisateur
-      let michel = new Utilisateur('michel', 'hoff');
-
-        elon.sePresenter();
-        ----------------------------------------------------------------------------------------

@@ -732,7 +732,7 @@ class Personne {
           this.nom = nom;
         }
           sePresenter(){
-            console.log (`je m'appelle ${this.prenom} ${this.nom}.`);// Bien mettre ici des backticks (accent grave) pour la chaine de caractère à cause de m'appelle qui a une apostrophe
+            console.log (`je m'appelle ${this.prenom} ${this.nom}.`);
           }
         
       }
@@ -741,4 +741,3 @@ class Personne {
       let michel = new Utilisateur('michel', 'hoff');
 
         elon.sePresenter();
-        ----------------------------------------------------------------------------------------

@@ -15,20 +15,10 @@ export direBonjour(prenom) {
   // index.html
   <script type="module" src="index.js"></script>//Il faudra bien insérer ce script sur chaque page où il y a des modules
 ------------------------------------
-  //AUTRE EXEMPLE, il y a plusieurs exemple ds le code ci dessous
-  import { direBonjour } from './modules/salutation.js';
-  import  MonUtilisateur  from './modules/utilisateur.js';
+  //AUTRE EXEMPLE
+  import { direBonjour } from './modules/direBonjour.js';
+  import { MonUtilisateur } from './modules/utilisateur.js';
 
   console.log (direBonjour('Nicolas'));
-  let elon = new MonUtilisateur('elon', 'musk');
 
-  //module salutation.js
-  export let direBonjour = prenom => 'Bonjour' + prenom;
-  export let direAurevoir = prenom => 'Au revoir' + prenom;
-
-  //module utilisateur.js
-  class Utilisateur{
-    //......
-  }
-  export default Utilisateur;//Utiliser par defaut la class utilisateur, on l export à la class MonUtilisateur
-  //Comme il y a default, on n'est pas obligé de mettre des acolades à la classe MonUtilisateur ci dessus
+  //module saluta

@@ -50,7 +50,7 @@ let articles ={
     description: 'ddddd',
   }
 }
-console.log(articles[articleA]['titre'])
+console.log(articles[0])
 --------------------------------------------------------------------------------
 let informations = ['superSayen', '25', 'homme'];
 
@@ -667,11 +667,13 @@ class Personne {
   //Dans cet exemple, la classe Personne a deux propriétés : _nom et _age. Les getters et setters pour ces propriétés permettent de contrôler leur accès et leur modification.
 
 
-// Les getters et setters sont définis en utilisant les mots-clés get et set, suivis du nom de la propriété avec une majuscule pour le getter et le setter. Dans l'exemple ci-dessus, le getter pour la propriété nom est défini comme get nom(), et le setter est défini comme set nom(nouveauNom).
-// L'utilisation de getters et setters est facultative en JavaScript. Si vous n'avez pas besoin de contrôler l'accès ou la modification des propriétés d'un objet, vous pouvez simplement y accéder et les modifier directement.
+Les getters et setters sont définis en utilisant les mots-clés get et set, suivis du nom de la propriété avec une majuscule pour le getter et le setter. Dans l'exemple ci-dessus, le getter pour la propriété nom est défini comme get nom(), et le setter est défini comme set nom(nouveauNom).
+
+
+L'utilisation de getters et setters est facultative en JavaScript. Si vous n'avez pas besoin de contrôler l'accès ou la modification des propriétés d'un objet, vous pouvez simplement y accéder et les modifier directement.
                                 -----------------------
 //Dans ces exemples, la propriété nom est encapsulée en utilisant une propriété privée _nom, et les méthodes get et set permettent d'accéder à cette propriété de manière contrôlée. Notez que le nom de la propriété privée commence par un underscore _ pour indiquer qu'elle ne doit pas être accédée directement en dehors de l'objet.
-    class Utilisateur {//Toujours mettre une majuscule au début pour les class
+    class Utilisateur {
         constructor(prenom, nom, email) {
           this.prenom = prenom;
           this.nom    = nom;
@@ -724,21 +726,3 @@ class Personne {
       // // perroquet.presentation();
       // // perroquet.voler();
       // console.log(perroquet);
-      --------------------------------------------------------------------------------------
-      //LES CLASSES ET LES CONSTRUCTEURS
-      class Utilisateur {
-        constructor (prenom, nom){
-          this.prenom = prenom;
-          this.nom = nom;
-        }
-          sePresenter(){
-            console.log (`je m'appelle ${this.prenom} ${this.nom}.`);// Bien mettre ici des backticks (accent grave) pour la chaine de caractère à cause de m'appelle qui a une apostrophe
-          }
-        
-      }
-
-      let elon = new Utilisateur('elon', 'musk');//On crée un nouvel objet grâce à la class utilisateur
-      let michel = new Utilisateur('michel', 'hoff');
-
-        elon.sePresenter();
-        ----------------------------------------------------------------------------------------

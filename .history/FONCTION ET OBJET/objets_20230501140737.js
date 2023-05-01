@@ -732,13 +732,10 @@ class Personne {
           this.nom = nom;
         }
           sePresenter(){
-            console.log (`je m'appelle ${this.prenom} ${this.nom}.`);// Bien mettre ici des backticks (accent grave) pour la chaine de caractère à cause de m'appelle qui a une apostrophe
+            console.log ('je m'appelle ${this.prenom} ${})
           }
         
       }
 
-      let elon = new Utilisateur('elon', 'musk');//On crée un nouvel objet grâce à la class utilisateur
-      let michel = new Utilisateur('michel', 'hoff');
-
-        elon.sePresenter();
-        ----------------------------------------------------------------------------------------
+      let elon = new utilisateur('elon', 'musk');//On crée un nouvel objet grâce à la class utilisateur
+      let michel = new utilisateur('michel', 'hoff');

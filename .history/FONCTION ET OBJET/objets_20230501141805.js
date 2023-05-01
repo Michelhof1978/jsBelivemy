@@ -741,4 +741,3 @@ class Personne {
       let michel = new Utilisateur('michel', 'hoff');
 
         elon.sePresenter();
-        ----------------------------------------------------------------------------------------

@@ -28,7 +28,6 @@ export direBonjour(prenom) {
 
   //module utilisateur.js
   class Utilisateur{
-    //......
+    ......
   }
-  export default Utilisateur;//Utiliser par defaut la class utilisateur, on l export à la class MonUtilisateur
-  //Comme il y a default, on n'est pas obligé de mettre des acolades à la classe MonUtilisateur ci dessus
+  export default Utilisateur;
