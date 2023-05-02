@@ -1,0 +1,4 @@
+null
+undefined
+Boolean
+Number
