@@ -1,5 +1,5 @@
 //on utilise Reac pour éviter de nous répéter = DRY => Don't repeat yourself.
-
+//Installer 
 //Exemple:Affichage des informations de façon dynamique: Calcul de moyenne par éléve
 
 //Sur le code ci-dessous, le code se répéte et ce n est pas bon, REACT va aider
@@ -26,10 +26,10 @@
   }
 
   function Eleve(props) {//Mettre une majuscule par convention
-    return (//Retourne du code html
-      <div className="eleve">
-        <h1>{props.name}</h1>
-        <p>Moyenne scolaire : <b>{props.moyenne}/20</b></p>
+    return (//Retourne du code html JSX
+      <div className="eleve">//Mettre une majuscule par convention
+        <h1>{props.name}</h1> //On récupére la propriété name ci dessous
+        <p>Moyenne scolaire : <b>{props.moyenne}/20</b></p>//On récupére la propriété moyenne ci dessous
       </div>
     );
   }
