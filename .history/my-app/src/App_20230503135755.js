@@ -4,7 +4,7 @@ import './App.css';
 //1ère solution pour créer un composant, le plus utilisé que la fonction fléchée
 function App() {//Toujours mettre une majuscule pour nommer une fonction quand on crée un composant
   return (
-    <div className="App">
+    <div className="App">//Ce code n'est pas du html mais du JSX, on transforme le html en js, on notera donc className pour le 
       <h1>BIENVENUE MIMICHE</h1>
     </div>
   );

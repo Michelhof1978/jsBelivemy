@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import App from './COMPONENTS/App/App';//Pas besoins de mettre App.js, il est retrouvé facilement
+import App from './COMPONENTS/App/App4
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
