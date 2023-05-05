@@ -3,11 +3,7 @@ import './Eleve.css'//On importe le css
 
 class Eleve extends Component {//On hérite la class eleve
         state = {//State est un object React qui permet de gérer les données
-                eleves: [
-                    {
-                        
-                    }
-                ]
+                eleve
 
         }; //
 

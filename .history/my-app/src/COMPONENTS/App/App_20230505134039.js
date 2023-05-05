@@ -5,7 +5,7 @@ import './App.css';//On importe le css
 import Eleve from '../Eleve/Eleve';
 
 //1ère solution pour créer un composant, le plus utilisé que la fonction fléchée
-//Ce code ci dessous permet uniquement de récupérer des informations.
+//Ce code
 function App() {//Toujours mettre une majuscule pour nommer une fonction quand on crée un composant
 //  render() ;Voir code plus bas, on mets render pour les anciens code au tout début de React mais aujourd hui, on ne l utilise plus
   

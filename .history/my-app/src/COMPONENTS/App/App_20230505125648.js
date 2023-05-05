@@ -5,20 +5,14 @@ import './App.css';//On importe le css
 import Eleve from '../Eleve/Eleve';
 
 //1ère solution pour créer un composant, le plus utilisé que la fonction fléchée
-//Ce code ci dessous permet uniquement de récupérer des informations.
 function App() {//Toujours mettre une majuscule pour nommer une fonction quand on crée un composant
 //  render() ;Voir code plus bas, on mets render pour les anciens code au tout début de React mais aujourd hui, on ne l utilise plus
-  
-return (
-   
-   <div className="App">//Ce code n'est pas du html mais du JSX, on transforme le html en js, on notera donc className pour le jsx
+  return (
+    <div className="App">//Ce code n'est pas du html mais du JSX, on transforme le html en js, on notera donc className pour le jsx
       
       <h1>BIENVENUE MIMICHE</h1>//On appele ce code du sucre syntaxique = JSX, pour écrire plus facilement du Js
         
-        <Eleve nom = "eva dupont" moyenne = "15">
-              "Aller toujours plus loin" //propriété CHILDREN ds eleve.js
-          </Eleve> //On ajoute le composant grâce à la class eleve de eleve.js  et sera ajouté au html, on dit que c'est une brique eleve qui est ajouté
-        
+        <Eleve nom = "eva dupont" moyenne = "15"><el //On ajoute le composant grâce à la class eleve de eleve.js  et sera ajouté au html, on dit que c'est une brique eleve qui est ajouté
         <Eleve nom = "michel hoffmann" moyenne = "5"></Eleve>
         
         </div>;//JSX doit avoir un élément parent pour pouvoir fonctionner, on doit donc incorporer le H1 ds un élément parent qui est là la DIV

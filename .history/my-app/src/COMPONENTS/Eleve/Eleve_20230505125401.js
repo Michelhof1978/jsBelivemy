@@ -2,14 +2,7 @@ import React, { Component } from "react";//Importer la librairie
 import './Eleve.css'//On importe le css
 
 class Eleve extends Component {//On hérite la class eleve
-        state = {//State est un object React qui permet de gérer les données
-                eleves: [
-                    {
-                        
-                    }
-                ]
-
-        }; //
+   {
 
     return (
     <div className = "eleve">//Element parent, obligatoire pour créer un composant
@@ -17,11 +10,11 @@ class Eleve extends Component {//On hérite la class eleve
         <p>Moyenne scolaire : <b>{this.props.moyenne}/20</b></p>
 
         <p> Age :{Math.floor (Math.random()) * 100}</p>//On insére ici du js ds le jsx //On calcul l âge aleatoire et on arrondit
-        <i>{this.props.children}</i>
+    <i>{this.props.ch}</i>
     </div>
     )
  }
-}
+
 export default Eleve; //On veut exporter par defaut, ce qu on a precisé maintenant
 
 //AUTRE FACON DE FAIRE LE CODE CI DESSUS A PRIVILEGIER
