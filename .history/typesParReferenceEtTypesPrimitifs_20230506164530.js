@@ -26,7 +26,7 @@ let mon Objet = {//objet initial
 console.log(monObjet.voiture);// Resultat tesla
 
 let monAutreObjet = {...monObjet}; //Créer une copie avec REST parameter), javascript va copier toutes les valeurs de mon nouvel objet
-console.log(monAutreObjet.voiture);//résultat tesla //LES 3 PETITS POINTS = SPREAD OPERATOR
+console.log(monAutreObjet.voiture);//résultat tesla //LES 3 PETITS POINTS = SPREAID OPERATOR
 
 //Modifie??
 monObjet.voiture = "toyota";

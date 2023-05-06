@@ -1,7 +1,5 @@
   //Ce composant est un  STATEFULL / CONTAINER: Composant qui gère un state
-
-  //IMPORTANT!!!! Le state et les Props ? Nous pouvons ainsi gérer les données avec le state, et envoyer ces données à nos composants grâce aux props.
- 
+  
   import React,{ Component } from 'react';//On doit importer l objet component de  la librairie React pour pouvoir créer un composant du site
   import './App.css';//On importe le css
 
@@ -39,9 +37,8 @@
     //IMPORTANT On ne doit pas modifier le state en récupérant les informations, on doit pouvoir récupérer les infos de manière IMMUTABLE
       const nouveauState = [...this.state.eleves];//Comme state est un object et un type par référence(voir  type primitif et type reference), on utilisera le Rest parameter car on ne peut pas directement faire une copie sur un object, on crée un pointeur sur l object en cours state
       nouveauState[0];nom = 'brigitte macron';
-      ...this.state,//On demande de faire une copie de state avec le Rest parameter
       this.setState({//setState permet de modifier le state
-          eleves: nouveauState
+          eleves: nouve
       });
       //Cela permettra de modifier le nom sans modifier le state original en ayant une copie du  state
       -------------------------------------

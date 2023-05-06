@@ -1,7 +1,5 @@
   //Ce composant est un  STATEFULL / CONTAINER: Composant qui gère un state
-
-  //IMPORTANT!!!! Le state et les Props ? Nous pouvons ainsi gérer les données avec le state, et envoyer ces données à nos composants grâce aux props.
- 
+  //Le state et les Props ?Nous pouvons ainsi gérer les données avec le state, et envoyer ces données à nos composants grâce aux props.
   import React,{ Component } from 'react';//On doit importer l objet component de  la librairie React pour pouvoir créer un composant du site
   import './App.css';//On importe le css
 
