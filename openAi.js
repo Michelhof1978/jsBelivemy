@@ -1,0 +1,1 @@
+const openai = require('openai')('votre-clé-api')

@@ -1,20 +1,6 @@
   //Un composant est monté, modifié ou démonté
-
-  //Monté => Branche
-  componentDidMount() {
-    console.log('[App.js] componentDidMount');
-  }
-
-  //Modifié => Modification
-  conponentDidUpdate() {
-    console.log('[App.js] componentDidUpdate');
-  }
-
-  //Démonté => Débranché
-  componentWillUnmount() {
-    console.log('[App.js] componentWillMount');
-  }
-  ------------------------------------------------------------------------------------------------------------
+  //Monté =>
+  
   
   //Ce composant est un  STATEFULL / CONTAINER: Composant qui gère un state
 

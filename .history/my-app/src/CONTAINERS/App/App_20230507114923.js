@@ -7,7 +7,7 @@
 
   //Modifié => Modification
   conponentDidUpdate() {
-    console.log('[App.js] componentDidUpdate');
+    console.log('[App.js] componentDidU');
   }
 
   //Démonté => Débranché

@@ -1,21 +1,3 @@
-  //Un composant est monté, modifié ou démonté
-
-  //Monté => Branche
-  componentDidMount() {
-    console.log('[App.js] componentDidMount');
-  }
-
-  //Modifié => Modification
-  conponentDidUpdate() {
-    console.log('[App.js] componentDidUpdate');
-  }
-
-  //Démonté => Débranché
-  componentWillUnmount() {
-    console.log('[App.js] componentWillMount');
-  }
-  ------------------------------------------------------------------------------------------------------------
-  
   //Ce composant est un  STATEFULL / CONTAINER: Composant qui gère un state
 
   //IMPORTANT!!!! Le state et les Props ? Nous pouvons ainsi gérer les données avec le state, et envoyer ces données à nos composants grâce aux props.
@@ -45,18 +27,18 @@
   ]
 }; 
 ------------------------------------------------------------------------------------------------------------------
-    buttonClickedHandler = nouveauNom => {//Fonction pour le bouton ci dessous, grâce à elle, l événement se déclanchera lors du clic sur bouton, s il n'y avait pas cette fonction le jsx lancera le js qui est à l intérieur de lui automatiquement, ce qui poserait problème
+    buttonClickedHandler = () => {//Fonction pour le bouton ci dessous, grâce à elle, l événement se déclanchera lors du clic sur bouton, s il n'y avait pas cette fonction le jsx lancera le js qui est à l intérieur de lui automatiquement, ce qui poserait problème
     //   this.setState({
     //     eleves:[
     //       { nom: 'carole bouquet', 
     // moyenne: 15, citation:'bienvenue'},
     //     ]
     //   })//On peut nommer la fonction comme on veut mais par convention, on ajoutera à la fin du nom de la fonction Handler
-   --
+   ----------------------
     //Autre façon de faire le code ci dessus, en utilisant REST paraméter A FAIRE!!!!!!!!!!!!!!
     //IMPORTANT On ne doit pas modifier le state en récupérant les informations, on doit pouvoir récupérer les infos de manière IMMUTABLE
       const nouveauState = [...this.state.eleves];//Comme state est un object et un type par référence(voir  type primitif et type reference), on utilisera le Rest parameter car on ne peut pas directement faire une copie sur un object, on crée un pointeur sur l object en cours state
-      nouveauState[0];nom = nouveauNom;
+      nouveauState[0];nom = 'brigitte macron';
       ...this.state,//On demande de faire une copie de state avec le Rest parameter
       this.setState({//setState permet de modifier le state
           eleves: nouveauState
@@ -72,22 +54,19 @@
 
    <h1>BIENVENUE MIMICHE</h1>/*//On appele ce code du sucre syntaxique = JSX, pour écrire plus facilement du Js */}
      
-   <button onClick = {this.buttonClickedHandler.bind(this, 'Elina')}>Modification nom eleve</button>/*//ON NE METS PAS DE PARENTHESE ATTENTION, ON veut juste passer une reference par cette fonction, il faudra insérer bind avec this(context actuel) et son paramétre (Elina) pour pouvoir changer de nom//Comme ce n'est pas du js mais du jsx et que l on veut créer un événement, il suffir juste de mettre la majuscule à onClick, comme c'est une class, on ajoute this pour appeler la fonction buttonClickedHandler
+   <button onClick = {this.buttonClickedHandler.bind(this, '')}>Modification nom eleve</button>/*//ON NE METS PAS DE PARENTHESE ATTENTION, ON veut juste passer une reference par cette fonction //Comme ce n'est pas du js mais du jsx et que l on veut créer un événement, il suffir juste de mettre la majuscule à onClick, comme c'est une class, on ajoute this pour appeler la fonction buttonClickedHandler
    //JSX applique le javascript de suite et automatiquement, ce qui va poser un soucis lors d un événement comme le bouton ci dessus, on va devoir créer une fonction pour que l événement soit executé lors du click sur le bouton gâce à buttonClickedHandler
    //Pour appeler buttonClickedHandler et pour que ça fonctionne, on ne mets pas de parenthèse sinon ça va poser un problème */}
   
-//VOILA 2 FACONS DIFFERENTE POUR CHANGER DE NOM 1 avec le bouton ci dessus ({this.buttonClickedHandler.bind(this, 'Elina')}) ET LE 2 EME EN CLIQUANT SUR LE NOM CI DESSOUS  clic = {() => this.buttonClickedHandler('lea')} A utiliser de preference!!!!!
-   
-    //1ER COMPOSANT
      <Eleve nom = {this.state.eleves[0].nom} 
             moyenne = {this.state.eleves[0].moyenne}>
-            clic = {() => this.buttonClickedHandler('lea')}//On va executer une fonction anonyme avec paramétre léa et Quand on cliquera sur le nom, le nom va changer, Clic = ma méthode, 
+            clic = {this.buttonClickedHandler}//Quand on cliquera sur le nom, le nom va changer, Clic = ma méthode, !!!!!Surtout ne pas mettre de parenthèse quand on appelle la méthode sinon, le code va s'éxectuter automatiquement alors que l on souhaite qu'il s execute lors du clic sur bouton
+       {this.state.eleves[0].citation} /*//propriété CHILDREN ds eleve.js */
      </Eleve> //On ajoute le composant grâce à la class eleve de eleve.js  et sera ajouté au html, on dit que c'est une brique eleve qui est ajouté
     
-     //2EME COMPOSANT
     <Eleve nom = {this.state.eleves[1].nom}
            moyenne = {this.state.eleves[1].moyenne}>
-           clic = {() => this.buttonClickedHandler('nicolas')}
+           clic = {this.buttonClickedHandler}
     {this.state.eleves[1].citation}
     </Eleve>
     

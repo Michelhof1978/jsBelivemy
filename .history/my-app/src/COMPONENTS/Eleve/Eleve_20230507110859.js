@@ -7,7 +7,7 @@ class Eleve extends Component {//On hérite la class eleve
     
     return (
     <div className = "eleve">//Element parent, obligatoire pour créer un composant
-        <h1 onClick = {this.props.clic} > {this.props.nom} </h1>//this: on prends l objet en cours et on prends la propriété nom
+        <h1 onClick = {this.props.clic} > {this.props.nom} </h1>//Quand on va cliquer this: on prends l objet en cours et on prends la propriété nom
        //On passe la référence de ma méthode (onClick = {this.props.clic} )
         <p>Moyenne scolaire : <b>{this.props.moyenne}/20</b></p>
 

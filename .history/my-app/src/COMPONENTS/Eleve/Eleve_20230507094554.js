@@ -7,14 +7,13 @@ class Eleve extends Component {//On hérite la class eleve
     
     return (
     <div className = "eleve">//Element parent, obligatoire pour créer un composant
-        <h1 onClick = {this.props.clic} > {this.props.nom} </h1>//this: on prends l objet en cours et on prends la propriété nom
-       //On passe la référence de ma méthode (onClick = {this.props.clic} )
+        <h1 onClick = {}{this.props.nom}</h1>//this: on prends l objet en cours et on prends la propriété nom
         <p>Moyenne scolaire : <b>{this.props.moyenne}/20</b></p>
 
         <p> Age :{Math.floor (Math.random()) * 100}</p>//On insére ici du js ds le jsx //On calcul l âge aleatoire et on arrondit
         <i>{this.props.children}</i>// Va détecter automatiquement l enplacement children par rapport à lélément parent
     </div>
-    );
+    )
  }
 }
 export default Eleve; //On veut exporter par defaut, ce qu on a precisé maintenant

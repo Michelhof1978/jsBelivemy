@@ -1,21 +1,3 @@
-  //Un composant est monté, modifié ou démonté
-
-  //Monté => Branche
-  componentDidMount() {
-    console.log('[App.js] componentDidMount');
-  }
-
-  //Modifié => Modification
-  conponentDidUpdate() {
-    console.log('[App.js] componentDidUpdate');
-  }
-
-  //Démonté => Débranché
-  componentWillUnmount() {
-    console.log('[App.js] componentWillMount');
-  }
-  ------------------------------------------------------------------------------------------------------------
-  
   //Ce composant est un  STATEFULL / CONTAINER: Composant qui gère un state
 
   //IMPORTANT!!!! Le state et les Props ? Nous pouvons ainsi gérer les données avec le state, et envoyer ces données à nos composants grâce aux props.

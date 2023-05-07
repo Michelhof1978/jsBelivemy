@@ -1,21 +1,3 @@
-  //Un composant est monté, modifié ou démonté
-
-  //Monté => Branche
-  componentDidMount() {
-    console.log('[App.js] componentDidMount');
-  }
-
-  //Modifié => Modification
-  conponentDidUpdate() {
-    console.log('[App.js] componentDidUpdate');
-  }
-
-  //Démonté => Débranché
-  componentWillUnmount() {
-    console.log('[App.js] componentWillMount');
-  }
-  ------------------------------------------------------------------------------------------------------------
-  
   //Ce composant est un  STATEFULL / CONTAINER: Composant qui gère un state
 
   //IMPORTANT!!!! Le state et les Props ? Nous pouvons ainsi gérer les données avec le state, et envoyer ces données à nos composants grâce aux props.
@@ -77,8 +59,7 @@
    //Pour appeler buttonClickedHandler et pour que ça fonctionne, on ne mets pas de parenthèse sinon ça va poser un problème */}
   
 //VOILA 2 FACONS DIFFERENTE POUR CHANGER DE NOM 1 avec le bouton ci dessus ({this.buttonClickedHandler.bind(this, 'Elina')}) ET LE 2 EME EN CLIQUANT SUR LE NOM CI DESSOUS  clic = {() => this.buttonClickedHandler('lea')} A utiliser de preference!!!!!
-   
-    //1ER COMPOSANT
+   //1ER COMPOSANT
      <Eleve nom = {this.state.eleves[0].nom} 
             moyenne = {this.state.eleves[0].moyenne}>
             clic = {() => this.buttonClickedHandler('lea')}//On va executer une fonction anonyme avec paramétre léa et Quand on cliquera sur le nom, le nom va changer, Clic = ma méthode, 
