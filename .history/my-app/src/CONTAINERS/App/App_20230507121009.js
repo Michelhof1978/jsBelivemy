@@ -1,9 +1,29 @@
+  //Un composant est monté, modifié ou démonté
 
+  //Monté => Branche
+  componentDidMount() {
+    console.log('[App.js] componentDidMount');
+  }
+
+  //Modifié => Modification
+  conponentDidUpdate() {
+    console.log('[App.js] componentDidUpdate');
+  }
+
+  //Démonté => Débranché
+  componentWillUnmount() {
+    console.log('[App.js] componentWillMount');
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
+ 
+    ------------------------------------------------------------------------------------------------------------
+  
   //Ce composant est un  STATEFULL / CONTAINER: Composant qui gère un state
 
   //IMPORTANT!!!! Le state et les Props ? Nous pouvons ainsi gérer les données avec le state, et envoyer ces données à nos composants grâce aux props.
  
-  import React,{ useState }/*{ Component } */from 'react';//On doit importer l objet component de  la librairie React pour pouvoir créer un composant du site
+  import React,{ Component } from 'react';//On doit importer l objet component de  la librairie React pour pouvoir créer un composant du site
   import './App.css';//On importe le css
 
   // Composant
@@ -11,14 +31,11 @@
 
   //1ère solution pour créer un composant, le plus utilisé que la fonction fléchée
   //Ce code ci dessous permet uniquement de récupérer des informations.
--------------
-  const App = () => {//Toujours mettre une majuscule pour nommer une fonction quand on crée un composant
-      constructor(props) {
-        super(props);
-        console.log('[App.js] Constructor');
-      }
+
+  class App extends Component{//Toujours mettre une majuscule pour nommer une fonction quand on crée un composant
+
   //  render() ;Voir code plus bas, on mets render pour les anciens code au tout début de React mais aujourd hui, on ne l utilise plus
--------
+-----------------------------------------------------------------------------------------------------
   state = {//State est un object React qui permet de gérer les données,c'est un type par référence, le but du state est de regrouper toutes les informations ds un seul enplacement
   eleves: [//On crée un tableau d'objets et ds chaque tableau, il y aura un object javascript
     { nom: 'Eva Dupont', 
@@ -108,63 +125,3 @@ export default App;
   }
   }
   export default App;
-  -------------------------------------------------------------------------------------------------------
-  EVITER DE FAIRE LE CODE CI DESSUS? UTILISER PLUTOT LES HOOKS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-//   Les hooks sont des fonctions spéciales de React qui permettent aux développeurs de gérer l'état et le cycle de vie des composants de manière plus simple et plus expressive. Les hooks ont été introduits dans React 16.8 pour résoudre certains problèmes liés à l'utilisation de classes et de méthodes du cycle de vie des composants.
-
-// Les hooks permettent de :
-// 1. Utiliser l'état et d'autres fonctionnalités de React sans avoir besoin de créer une classe.
-// 2. Réutiliser la logique d'un composant sans avoir besoin de créer une hiérarchie de composants.
-// 3. Utiliser le state et les effets dans des fonctions, plutôt que d'avoir à écrire des classes.
-
-// Les hooks les plus couramment utilisés sont :
-// 1. useState : permet de gérer l'état d'un composant en utilisant un tableau qui contient la valeur de l'état actuel et une fonction qui permet de mettre à jour cet état.
-// 2. useEffect : permet d'exécuter du code lorsqu'un composant a été monté, mis à jour ou démonté.
-// 3. useContext : permet de passer des données entre les composants sans avoir besoin de passer des propriétés manuellement.
-// 4. useRef : permet de référencer un élément DOM dans un composant et d'y accéder à partir de fonctions.
-
-// Il est important de noter que les hooks doivent être utilisés uniquement dans des composants fonctionnels, et non dans des classes. Les hooks ne sont pas rétrocompatibles et ne peuvent pas être utilisés dans des versions antérieures de React.
-// En résumé, les hooks sont des fonctions spéciales de React qui permettent aux développeurs de gérer l'état et le cycle de vie des composants de manière plus simple et plus expressive. Les hooks les plus couramment utilisés sont useState, useEffect, useContext et useRef.
-  
-const [eleves, setEleves] = useState([
-  {
-    nom: 'Eva Dupont',
-    moyenne: 15,
-    citation: 'Bienvenue',
-  },
-
-  { nom: 'michel hoffmann',
-    moyenne: 5, 
-    citation: null},
-
-  ]);
-
-  const [maintenance, setMaintenance] = useState(false);
-
-// Dans cet exemple ci dessus, deux hooks "useState" sont utilisés pour définir des états dans un composant fonctionnel de 
-// React.
-// Le premier hook "useState" permet de définir un état "eleves" qui est un tableau d'objets représentant des élèves,
-//  avec les propriétés "nom", "moyenne" et "citation". La valeur initiale de l'état est définie comme un tableau 
-//  avec deux éléments. Cet état peut être mis à jour avec la fonction "setEleves", qui prend un nouveau tableau d'objets en paramètre.
-// Le deuxième hook "useState" permet de définir un état "maintenance" qui est un booléen représentant l'état de
-//  maintenance de l'application. La valeur initiale de l'état est définie comme "false". Cet état peut être mis à
-//  jour avec la fonction "setMaintenance", qui prend un nouveau booléen en paramètre.
-// L'utilisation des hooks "useState" permet de définir et de mettre à jour l'état du composant de manière simple 
-// et expressive. Cela permet aux développeurs de React de créer des composants fonctionnels avec des fonctionnalités dynamiques et interactives sans avoir à utiliser des classes et des méthodes du cycle de vie des composants.
-  
-//Plus besoins de class et de state avec les hooks, on utilise les states de cette façon avec hook
-
-   //1ER COMPOSANT
-   <Eleve nom = {eleves[0].nom} /> // On enlève this et state par rapport au code ci dessus
-   moyenne = {eleves[0].moyenne}>
-   clic = {() => this.buttonClickedHandler('lea')}
-
-   {eleves[0].citation}
-   </Eleve> 
-
-//2EME COMPOSANT
-<Eleve nom = {eleves[1].nom}
-  moyenne = {eleves[1].moyenne}>
-  clic = {() => this.buttonClickedHandler('nicolas')}
-{eleves[1].citation}
-</Eleve>

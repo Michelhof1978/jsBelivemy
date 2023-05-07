@@ -1,5 +1,5 @@
 
-                      //Ce composant est un  STATELESS / Component : Composant qui gère pas de state
+//Ce composant est un  STATELESS / Component : Composant qui gère pas de state
 
 import React, { Component } from "react";//Importer la librairie 
 import './Eleve.css'//On importe le css

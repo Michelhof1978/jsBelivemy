@@ -1,10 +1,5 @@
 
-                      //Ce composant est un  STATELESS / Component : Composant qui gère pas de state
 
-import React, { Component } from "react";//Importer la librairie 
-import './Eleve.css'//On importe le css
-
-class Eleve extends Component {//On hérite la class eleve
 ----------------------------
 //Un composant est monté, modifié ou démonté VOIR CI DESSOUS
 

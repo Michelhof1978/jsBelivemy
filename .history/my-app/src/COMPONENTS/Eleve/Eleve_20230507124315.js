@@ -1,11 +1,3 @@
-
-                      //Ce composant est un  STATELESS / Component : Composant qui gère pas de state
-
-import React, { Component } from "react";//Importer la librairie 
-import './Eleve.css'//On importe le css
-
-class Eleve extends Component {//On hérite la class eleve
-----------------------------
 //Un composant est monté, modifié ou démonté VOIR CI DESSOUS
 
   //Monté => Branche
@@ -27,7 +19,7 @@ class Eleve extends Component {//On hérite la class eleve
 // En résumé, la méthode "componentDidMount" est utilisée pour effectuer des tâches une fois que le composant a 
 // été monté, telles que la récupération de données à partir d'une API, la configuration d'événements, ou la 
 // modification de l'état du composant.
--------------------
+-------------------------------------------------
   //Modifié => Modification
   conponentDidUpdate() {
     console.log('[App.js] componentDidUpdate');
@@ -50,7 +42,7 @@ class Eleve extends Component {//On hérite la class eleve
 //   mis à jour, telles que la mise à jour des données d'un composant enfant, la modification de l'état du composant
 //    ou la mise à jour de l'interface utilisateur en fonction des nouvelles données.
 
----------------------
+------------------------------------------------
   //Démonté => Débranché
   componentWillUnmount() {
     console.log('[App.js] componentWillMount');
@@ -90,7 +82,11 @@ shouldComponentUpdate(nextProps, nextState) {
   //  systématique de cette méthode peut empêcher certaines mises à jour nécessaires de se produire, ce qui peut 
   //  entraîner des erreurs ou des problèmes dans l'application. Par conséquent, il est important de bien comprendre
   //   l'utilisation de cette méthode et de l'utiliser avec précaution.
-    -----------------
+    ------------------------------------------------------------------------------------------------------------
+
+
+
+
     
     return (
     <div className = "eleve">//Element parent, obligatoire pour créer un composant
