@@ -156,8 +156,8 @@ const [eleves, setEleves] = useState([
   
    const buttonClickedHandler = nouveauNom => {
       const nouveauxEleves = [...eleves];
-      nouveauxEleves[0].nom = nouveauNom; //Pour modifier le nom lors du clic sur boutton
-      setEleves(nouveauxEleves);
+      nouveauxEleves[0].nom = nouveauNom;
+
    }
 
 // Dans cet exemple ci dessus, deux hooks "useState" sont utilisés pour définir des états dans un composant fonctionnel de 

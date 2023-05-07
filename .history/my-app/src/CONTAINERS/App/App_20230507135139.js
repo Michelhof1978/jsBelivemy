@@ -141,7 +141,7 @@ const [eleves, setEleves] = useState([
   ]);
 
   const [maintenance, setMaintenance] = useState(false);
-  // Dans const [maintenance, setMaintenance] = useState(false); , il s'agit d'une utilisation du hook "useState" de React pour déclarer une variable d'état 
+  // Dans cet exemple, il s'agit d'une utilisation du hook "useState" de React pour déclarer une variable d'état 
   // nommée "maintenance" et une fonction "setMaintenance" pour mettre à jour cette variable.
   // La variable d'état "maintenance" est initialisée à "false" à l'aide de la fonction "useState". Cela signifie 
   // que, dans un premier temps, l'application n'est pas en mode maintenance.
@@ -154,11 +154,7 @@ const [eleves, setEleves] = useState([
   // Par exemple, si "maintenance" est défini sur "true", l'application peut afficher un message de maintenance ou
   //  empêcher les utilisateurs d'effectuer certaines actions.
   
-   const buttonClickedHandler = nouveauNom => {
-      const nouveauxEleves = [...eleves];
-      nouveauxEleves[0].nom = nouveauNom; //Pour modifier le nom lors du clic sur boutton
-      setEleves(nouveauxEleves);
-   }
+   c
 
 // Dans cet exemple ci dessus, deux hooks "useState" sont utilisés pour définir des états dans un composant fonctionnel de 
 // React.

@@ -154,11 +154,7 @@ const [eleves, setEleves] = useState([
   // Par exemple, si "maintenance" est défini sur "true", l'application peut afficher un message de maintenance ou
   //  empêcher les utilisateurs d'effectuer certaines actions.
   
-   const buttonClickedHandler = nouveauNom => {
-      const nouveauxEleves = [...eleves];
-      nouveauxEleves[0].nom = nouveauNom; //Pour modifier le nom lors du clic sur boutton
-      setEleves(nouveauxEleves);
-   }
+   const b
 
 // Dans cet exemple ci dessus, deux hooks "useState" sont utilisés pour définir des états dans un composant fonctionnel de 
 // React.

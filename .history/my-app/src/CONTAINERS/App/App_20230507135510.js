@@ -156,7 +156,7 @@ const [eleves, setEleves] = useState([
   
    const buttonClickedHandler = nouveauNom => {
       const nouveauxEleves = [...eleves];
-      nouveauxEleves[0].nom = nouveauNom; //Pour modifier le nom lors du clic sur boutton
+      nouveauxEleves[0].nom = nouveauNom; /
       setEleves(nouveauxEleves);
    }
 
