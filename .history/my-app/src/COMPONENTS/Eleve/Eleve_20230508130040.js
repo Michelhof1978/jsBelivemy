@@ -26,7 +26,7 @@ function Eleve(props) {
             return() =>{
                 console.log('[Eleve.js] Le nom a été modifié');
             }
-        },[props.nom props.moyenne]);//le code modifira qu une seule fois le nom et la moyenne grâce au tableau où on lui indique la propriété à changer
+        },[pr]);
 ------------------------------------------------------------------------------------------------
                   //Un composant est monté, modifié ou démonté VOIR CI DESSOUS
 

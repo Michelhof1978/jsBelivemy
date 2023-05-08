@@ -17,7 +17,7 @@
         super(props);
         console.log('[App.js] Constructor');
       }
-  //  render() ;Voir code plus bas, on mets render pour les anciens code au tout début de React mais aujourd hui, on ne l utilise plus, on utilise jamais render ds une fonction
+  //  render() ;Voir code plus bas, on mets render pour les anciens code au tout début de React mais aujourd hui, on ne l utilise plus
 -------
   state = {//State est un object React qui permet de gérer les données,c'est un type par référence, le but du state est de regrouper toutes les informations ds un seul enplacement
   eleves: [//On crée un tableau d'objets et ds chaque tableau, il y aura un object javascript
@@ -151,13 +151,11 @@ const [eleves, setEleves] = useState([
 
     console.log('[App.js] useEffect');
     return() => {//Sera executé uniquement si notre composant sera démonté
-        console.log('[App.js] useEffect (didUnmount) ')
+        console.
+        ('[App.js] useEffect (didUnmount) ')
     }//useEffect prends tout le temps une fonction anonyme
-  },[]);//On mets un tableau vide pour signaler au code de s executer qu une seule fois, sans tableau le code s executera tout le temps
+  },[]);//On mets un tableau
 
-  useEffect(() => { //on peut utiliser plusieurs useEffect
-    console.log('[App.js] useEffect (didUpdate')//On mets à jour notre composant
-  });
   // Dans const [maintenance, setMaintenance] = useState(false); , il s'agit d'une utilisation du hook "useState" de React pour déclarer une variable d'état 
   // nommée "maintenance" et une fonction "setMaintenance" pour mettre à jour cette variable.
   // La variable d'état "maintenance" est initialisée à "false" à l'aide de la fonction "useState". Cela signifie 
@@ -259,16 +257,3 @@ useEffect(() => {
 // qui seront surveillées pour déclencher l'exécution de la fonction callback.
 // En utilisant useEffect(), les développeurs de React peuvent ajouter des effets de bord à leurs composants de 
 // manière claire et modulaire.
-----------------------------------------------------------------------
-// //Effet de bord = Les effets de bord en informatique se réfèrent à des changements ou des actions qui se produisent dans un 
-// système en dehors de l'environnement contrôlé par une fonction ou un programme. En d'autres termes, ce sont des 
-// effets indirects qui ne sont pas prévus ou prévisibles lorsque le code est exécuté. Les effets de bord peuvent 
-// être intentionnels ou non, et ils peuvent avoir des conséquences imprévues sur le système.
-// Les exemples courants d'effets de bord incluent les interactions avec des fichiers ou des bases de données, les 
-// entrées/sorties, l'envoi de requêtes réseau, la modification de variables globales, la modification du contenu du
-//  presse-papiers, etc.Dans un contexte de programmation fonctionnelle, les effets de bord sont généralement considérés comme une mauvaise pratique car ils peuvent rendre le code difficile à maintenir, à déboguer et à tester. Les fonctions pures qui n'ont pas d'effets de bord sont préférables car elles sont plus prévisibles et plus faciles à raisonner.
-// Cependant, dans des langages de programmation impératifs comme C ou C++, les effets de bord sont courants et sont
-//  souvent nécessaires pour interagir avec le monde extérieur. Dans les langages de programmation fonctionnelle 
-//  comme Haskell, les effets de bord sont isolés dans des monades pour faciliter leur gestion et les rendre plus 
-//  prévisibles.
--------------------------------------------------------------------------

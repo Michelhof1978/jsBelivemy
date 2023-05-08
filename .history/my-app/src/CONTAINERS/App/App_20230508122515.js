@@ -17,7 +17,7 @@
         super(props);
         console.log('[App.js] Constructor');
       }
-  //  render() ;Voir code plus bas, on mets render pour les anciens code au tout début de React mais aujourd hui, on ne l utilise plus, on utilise jamais render ds une fonction
+  //  render() ;Voir code plus bas, on mets render pour les anciens code au tout début de React mais aujourd hui, on ne l utilise plus, on utils
 -------
   state = {//State est un object React qui permet de gérer les données,c'est un type par référence, le but du state est de regrouper toutes les informations ds un seul enplacement
   eleves: [//On crée un tableau d'objets et ds chaque tableau, il y aura un object javascript

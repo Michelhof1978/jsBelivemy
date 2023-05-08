@@ -1,32 +1,12 @@
 
                       //Ce composant est un  STATELESS / Component : Composant qui gère pas de state
 
-import React,{useEffect} /*{ Component }*/ from "react";//Importer la librairie 
+import React, /*{ Component }*/ from "react";//Importer la librairie 
 import './Eleve.css'//On importe le css
 
 function Eleve(props) {
-        //React HOOKS:
-        //componentDidmount
-            useEffect(() => {
-                console.log('[Eleve.js] componentDidMount');
-            },[]);//on passe un tableau pour ue le code ne s execute pas tout  le temps mais juste 1 seule fois
-        //componentDidUpdate
-        useEffect(() => {
-            console.log('[Eleve.js] componentDidUpdate');
-        }
-        //componentWillUnmount
-        useEffect(() => {
-            return() =>{
-                console.log('[Eleve.js] componentWillUnmount');
-            }
-        },[]);
+    retu
 
-        //Limitateur
-        useEffect(() => {
-            return() =>{
-                console.log('[Eleve.js] Le nom a été modifié');
-            }
-        },[props.nom props.moyenne]);//le code modifira qu une seule fois le nom et la moyenne grâce au tableau où on lui indique la propriété à changer
 ------------------------------------------------------------------------------------------------
                   //Un composant est monté, modifié ou démonté VOIR CI DESSOUS
 
@@ -125,9 +105,9 @@ shouldComponentUpdate(nextProps, nextState) {
     </div>
     );
  }
-
+}
 export default Eleve; //On veut exporter par defaut, ce qu on a precisé maintenant
----------------------------------------------------------------------------------------------------
+
 //AUTRE FACON DE FAIRE LE CODE CI DESSUS A PRIVILEGIER
 const Eleve = props => <div className = "eleve">//On peut aussi ajouter des paranthèses si l on le souhaite
          <h1>{props.nom}</h1>//Identique à this

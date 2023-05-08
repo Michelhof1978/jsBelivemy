@@ -17,7 +17,7 @@
         super(props);
         console.log('[App.js] Constructor');
       }
-  //  render() ;Voir code plus bas, on mets render pour les anciens code au tout début de React mais aujourd hui, on ne l utilise plus, on utilise jamais render ds une fonction
+  //  render() ;Voir code plus bas, on mets render pour les anciens code au tout début de React mais aujourd hui, on ne l utilise plus
 -------
   state = {//State est un object React qui permet de gérer les données,c'est un type par référence, le but du state est de regrouper toutes les informations ds un seul enplacement
   eleves: [//On crée un tableau d'objets et ds chaque tableau, il y aura un object javascript
@@ -259,7 +259,7 @@ useEffect(() => {
 // qui seront surveillées pour déclencher l'exécution de la fonction callback.
 // En utilisant useEffect(), les développeurs de React peuvent ajouter des effets de bord à leurs composants de 
 // manière claire et modulaire.
-----------------------------------------------------------------------
+
 // //Effet de bord = Les effets de bord en informatique se réfèrent à des changements ou des actions qui se produisent dans un 
 // système en dehors de l'environnement contrôlé par une fonction ou un programme. En d'autres termes, ce sont des 
 // effets indirects qui ne sont pas prévus ou prévisibles lorsque le code est exécuté. Les effets de bord peuvent 
@@ -271,4 +271,3 @@ useEffect(() => {
 //  souvent nécessaires pour interagir avec le monde extérieur. Dans les langages de programmation fonctionnelle 
 //  comme Haskell, les effets de bord sont isolés dans des monades pour faciliter leur gestion et les rendre plus 
 //  prévisibles.
--------------------------------------------------------------------------
