@@ -147,7 +147,7 @@ const [eleves, setEleves] = useState([
   const [maintenance, setMaintenance] = useState(false);
 
   //Etats:
-  useEffect(() => {//Explication en bas de page
+  useEffect(() => {//Explication en page de page
 
     console.log('[App.js] useEffect');
     return() => {//Sera executé uniquement si notre composant sera démonté

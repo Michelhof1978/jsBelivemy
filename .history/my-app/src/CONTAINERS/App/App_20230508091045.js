@@ -147,13 +147,8 @@ const [eleves, setEleves] = useState([
   const [maintenance, setMaintenance] = useState(false);
 
   //Etats:
-  useEffect(() => {//Explication en bas de page
-
-    console.log('[App.js] useEffect');
-    return() => {//Sera executé uniquement si notre composant sera démonté
-        console.
-        ('[App.js] useEffect (didUnmount) ')
-    }
+  useEffect(() => {
+    console.log('[App.js] useEffect)
   });//useEffect prends tout le temps une fonction anonyme
 
   // Dans const [maintenance, setMaintenance] = useState(false); , il s'agit d'une utilisation du hook "useState" de React pour déclarer une variable d'état 
@@ -227,33 +222,3 @@ export default App;
 // En utilisant le composant personnalisé "Eleve", les développeurs peuvent créer des composants réutilisables et
 //  maintenables, qui peuvent être utilisés avec différentes données et propriétés pour afficher des éléments dans
 //   une interface utilisateur.
-
-------------------------------------------------------------------
-UseEffect()
-// Le hook "useEffect" est une fonction de React qui permet de réaliser des actions spécifiques après le rendu du 
-// composant.Plus précisément, useEffect() est utilisé pour exécuter des effets de bord (side effects) dans les 
-// composants React, comme par exemple les appels à des API externes, la manipulation du DOM, la gestion des 
-// abonnements et des timers, etc.Le hook useEffect() prend deux arguments : la première est une fonction callback 
-// à exécuter après le rendu du composant, et la deuxième est un tableau de dépendances optionnelles. Les dépendances
-// spécifient les variables qui doivent être surveillées pour que la fonction callback soit exécutée. Si une des variables dans ce tableau change, la fonction callback est relancée.
-// Le hook useEffect() permet de séparer la logique de gestion de l'état (définie dans les hooks useState) et les
-//  effets de bord nécessaires à l'application.
-
-// Voici un exemple d'utilisation du hook useEffect() :
-
-// exemple:
-useEffect(() => {
-  // Code pour exécuter un effet de bord
-  console.log('Le composant a été monté !');
-
-  // Fonction de nettoyage (optional)
-  return () => {
-    console.log('Le composant a été démonté !');
-  };
-}, [variable1, variable2]);
-
-// Dans cet exemple, le hook useEffect() est utilisé pour afficher des messages dans la console après le montage 
-// et le démontage du composant. Le tableau de dépendances contient deux variables, "variable1" et "variable2", 
-// qui seront surveillées pour déclencher l'exécution de la fonction callback.
-// En utilisant useEffect(), les développeurs de React peuvent ajouter des effets de bord à leurs composants de 
-// manière claire et modulaire.
