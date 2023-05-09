@@ -336,22 +336,4 @@ const data = ({nom}) => nom;
 
 console.log(data(pays));
 
-// Ce code suppose qu'il y a un objet appelé "pays" qui a deux propriétés: "nom" et "pop". La première ligne 
-// déstructure l'objet "pays" pour extraire les valeurs des propriétés "nom" et "pop" et les stocker dans des 
-// variables du même nom. 
-
-// La deuxième ligne crée une fonction fléchée appelée "data" qui prend un objet en entrée et retourne la valeur de 
-// sa propriété "nom". Cependant, cette fonction utilise une syntaxe raccourcie pour extraire la propriété "nom" de
-//  l'objet passé en paramètre.
-
-// La troisième ligne appelle la fonction "data" en passant l'objet "pays" comme argument, et la valeur retournée est 
-// affichée dans la console. En résumé, ce code extrait la valeur de la propriété "nom" de l'objet "pays" en 
-// utilisant une fonction fléchée raccourcie.
-
-//Avec un tableau:
-const arr = [1,2,3]
-const [a, b, c] = arr;
-
-console.log(a,b,c);//Résulat 1 2 3
-
 -------------------------------------------------------------------------------------------------

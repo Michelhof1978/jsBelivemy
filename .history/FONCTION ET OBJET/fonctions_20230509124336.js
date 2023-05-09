@@ -316,42 +316,5 @@ const filteredArr = arr.filter(num => num > 2)//La méthode filter va retourner 
 // Si c'est le cas, `num` est inclus dans `filteredArr`. Si ce n'est pas le cas, `num` est exclu de `filteredArr`.
 // console.log(filteredArr);//Retorne tout ce qui est supérieur à 2 = [3, 4, 5, 6]
 
-arr.forEach(val => {//On prends tous les élément du tableau avec foreach et on soustrait -90 pour chaque élément
-
-console.log(val -90);
-})
+arr.forEach(val -90)
 -----------------------------------------------------------------------------------------------
-//Destructuring:(avec objets et tableaux)
-const pays = {
-  nom: "Italie",
-  pop: 60
-}
-const nom = pays.nom; OU const {nom, pop} = pays;//Plus simple et rapide, ces 2 lignes de code sont identiques
-
-console.log(nom, pop);
----------
-//Autre façon de faire et va être utilisé ds REACT souvent
-const {nom, pop} = pays;
-const data = ({nom}) => nom;
-
-console.log(data(pays));
-
-// Ce code suppose qu'il y a un objet appelé "pays" qui a deux propriétés: "nom" et "pop". La première ligne 
-// déstructure l'objet "pays" pour extraire les valeurs des propriétés "nom" et "pop" et les stocker dans des 
-// variables du même nom. 
-
-// La deuxième ligne crée une fonction fléchée appelée "data" qui prend un objet en entrée et retourne la valeur de 
-// sa propriété "nom". Cependant, cette fonction utilise une syntaxe raccourcie pour extraire la propriété "nom" de
-//  l'objet passé en paramètre.
-
-// La troisième ligne appelle la fonction "data" en passant l'objet "pays" comme argument, et la valeur retournée est 
-// affichée dans la console. En résumé, ce code extrait la valeur de la propriété "nom" de l'objet "pays" en 
-// utilisant une fonction fléchée raccourcie.
-
-//Avec un tableau:
-const arr = [1,2,3]
-const [a, b, c] = arr;
-
-console.log(a,b,c);//Résulat 1 2 3
-
--------------------------------------------------------------------------------------------------

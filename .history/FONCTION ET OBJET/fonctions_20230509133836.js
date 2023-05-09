@@ -348,10 +348,5 @@ console.log(data(pays));
 // affichée dans la console. En résumé, ce code extrait la valeur de la propriété "nom" de l'objet "pays" en 
 // utilisant une fonction fléchée raccourcie.
 
-//Avec un tableau:
-const arr = [1,2,3]
-const [a, b, c] = arr;
-
-console.log(a,b,c);//Résulat 1 2 3
-
+//Avec un tableau
 -------------------------------------------------------------------------------------------------

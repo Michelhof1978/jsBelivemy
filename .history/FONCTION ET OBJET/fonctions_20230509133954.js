@@ -349,9 +349,6 @@ console.log(data(pays));
 // utilisant une fonction fléchée raccourcie.
 
 //Avec un tableau:
-const arr = [1,2,3]
-const [a, b, c] = arr;
-
-console.log(a,b,c);//Résulat 1 2 3
+const arr = [1,2,3].forEachconst [a, b, c] = arr;
 
 -------------------------------------------------------------------------------------------------
